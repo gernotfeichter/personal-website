@@ -1,0 +1,226 @@
+<h1>Introduction</h1>
+<p>
+    During my studies in Information Management I came across the P vs NP problem,
+    which was introduced to us students by our professor in Informatics as being a
+    major unsolved problem in the field. During the preparation for one of the
+    exams I found out that a prize money of $1 million would be offered for a proper
+    solution by the Clay Mathematics Institute, which caught my attention.
+</p>
+<p>
+    Furthermore, I found the problem itself was quite easy to be understood and did
+    not even require too much previous knowledge, which I did not already possess.
+    As I had always enjoyed thinking
+    about various issues of logical nature this was definitely an issue I was
+    willing to spend some effort on. Being convinced I had always been quite talented
+    in truly understanding things gave me the confidence I could eventually
+    solve the problem.
+</p>
+<p>
+    Being unaware of how long it would take me to come up with a plausible resolution,
+    I must have spent at least a year of total spare time thinking about the
+    problem, distributed over a longer period of time. Initially, I thought that it
+    would only require me to have a certain
+    amount of shrewdness and that the time aspect would be negligible, which turned
+    out to be far from reality. It took me a while to truly get to the core of
+    the problem, learning from each previous failure and finally coming up with what
+    I regard as the proof. Then I put the solution down on paper in a structured manner,
+    making it as easy as possible for the reader to understand.
+</p>
+<h1>Proof</h1>
+
+<p>Link: <a href="pdf/p_not_equal_np_feichter.pdf">p_not_equal_np_feichter.pdf</a></p>
+
+<h1>Feedback</h1>
+<p>
+    So far I have sent the proof to three journals, only receiving rejections.
+    This is the reason I decided to publish it on my private website.
+    That being said, there is still hope that one day this proof will be accepted,
+    see the comment on the rejections below.
+</p>
+
+<h2>ACM Transactions on Algorithms (TALG)</h2>
+
+<h3>Journal Response</h3>
+<blockquote>
+    Dear Mr. Feichter,<br>
+    <br>
+    The TALG submission<br>
+    "Proof P != NP"<br>
+    by Feichter, Gernot<br>
+    cannot be accepted for publication in TALG, since the argument to show P != NP has major flaes.<br>
+    The reviews on the submission are included below.<br>
+    <br>
+    Sincerely,<br>
+    Glencora Borradaile<br>
+    <br>
+    ================================================================<br>
+    <br>
+    Referee: 1<br>
+    <br>
+    Comments to the Author<br>
+    The paper claims to present a proof that P \ne NP by claiming a lower bound of 2^(n/2) for the subset sum
+    problem.<br>
+    However, the argument is, at best, missing many ideas to be a true lower bound proof.<br>
+    <br>
+    The paper spends a long time arguing that in order to determine a 'no' answer to subset sum one must guarantee that
+    each of the 2^n possible subsets is either too large or too small and that in the worst case one can eliminate at
+    most 2^(n/2) of these subsets.
+    However, even if one can 'only' eliminate 2^(n/2) subsets from explicit consideration does not imply that one need
+    to enumerate all remaining subsets to determine there is no solution.
+    For example, in solving the minimum spanning tree problem, one needn't enumerate an exponential number of feasible
+    solutions to prove that the solution you find is the best solution.
+</blockquote>
+
+<h3>My comment</h3>
+
+<blockquote>
+    the argument to show P != NP has major flaes.
+</blockquote>
+<blockquote>
+    However, the argument is, at best, missing many ideas to be a true lower bound proof.
+</blockquote>
+<p>
+    If those flaws are only those listed below, please let me defend them.
+    Otherwise it would be helpful to list the concrete concerns.
+    Unfortunately by receiving rejection, the discussion seems to be over,
+    so no further clarifications are possible or seem to be desired.
+</p>
+
+<blockquote>
+    in the worst case one can eliminate at most 2^(n/2) of these subsets.
+</blockquote>
+<p>
+    Yes, and in fact even less than that as the problems size (n) grows larger.
+    This shows me that at least the final conclusion was comprehended, as this conclusion is not directly
+    stated in that manner.
+</p>
+
+<blockquote>
+    However, even if one can 'only' eliminate 2^(n/2) subsets from explicit consideration does not imply that one need
+    to enumerate all remaining subsets to determine there is no solution.
+</blockquote>
+<p>
+    By just picking a single conclusion out of context it is easy to refute.
+    That is why it is pointed out in the abstract that all sections in its entirety form the proof,
+    which should clarify just that what was criticised.
+</p>
+
+<h2>Algorithmica (ALGO)</h2>
+
+<h3>Journal Response</h3>
+<blockquote>
+    Dear Mr. Feichter:<br>
+    <br>
+    I have received the reports from my advisors on your manuscript, "Proof P != NP".<br>
+    <br>
+    With regret, I must inform you that, based on the advice received, I have decided that your manuscript cannot be
+    accepted for publication in Algorithmica.<br>
+    <br>
+    Attached, please find the reviewer comments for your perusal.<br>
+    <br>
+    I would like to thank you very much for forwarding your manuscript to us for consideration and wish you every
+    success in finding an alternative place of publication.<br>
+    <br>
+    Best regards,<br>
+    <br>
+    Ming-Yang Kao, PhD<br>
+    Editor-in-Chief<br>
+    Algorithmica.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Comments for the Author:<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Algorithmica primarily publishes novel discrete algorithms that have mathematically proven strong performance
+    guarantees and significant original mathematics that is directly related to the design and analysis of discrete
+    algorithms. The strengths of your work lie outside of these scopes. For this reason, I am returning your manuscript
+    without judgment on its merits.<br>
+</blockquote>
+
+<h3>My comment</h3>
+
+<p>Ok, if that is as stated, I might have chosen the wrong place for submission in that case.</p>
+
+<h2>Theoretical Computer Science</h2>
+
+<h3>Journal Response</h3>
+<blockquote>
+    Manuscript Number: TCS-D-15-00459<br>
+    Manuscript Title: Proof P != NP<br>
+    Author(s): Gernot Feichter<br>
+    Submitted to: Theoretical Computer Science<br>
+    <br>
+    <br>
+    Dear Mr. Gernot Feichter,<br>
+    <br>
+    Referees have evaluated your paper mentioned above. Comments are below. On the basis of these comments, the member
+    of the Editorial Board handling your paper has decided to reject it. I hope that the comments below will be of use
+    to you.<br>
+    <br>
+    I am sorry to give you this negative news. Thank you for your interest in TCS.<br>
+    <br>
+    Kind regards,<br>
+    Giorgio Ausiello<br>
+    Editor-in-Chief<br>
+    Theoretical Computer Science<br>
+    <br>
+    <br>
+    Comments:<br>
+    <br>
+    Dear author,<br>
+    <br>
+    It is our policy that such a submission claiming to resolve the P versus NP problem (and or its related<br>
+    big open problems) need to provide the explanation why the proposed technique can overcome several<br>
+    proof theoretic barriers. For example, we can consider a relativized world where P = NP; such a world<br>
+    has a combinatrial problem corresponding to the subset sum problem. That is, the problem corresponding<br>
+    to the subset sum problem is indeed in P in such a relativized world. It is the author's responsibility<br>
+    why the author's argument is still consistent with such a world. Unfortunately, I have not been able<br>
+    to find such an explanation in this submission; therefore, I would like to report the rejection of<br>
+    this submission to the editorial office.<br>
+    <br>
+    Sincerely,<br>
+    Osamu Watanabe<br>
+    <br>
+    ***********************************************************<br>
+    For further assistance, please visit our customer<br>
+    support site at http://help.elsevier.com/app/answers/list/p/7923<br>
+    Here you can search for solutions on a range of<br>
+    topics, find answers to frequently asked<br>
+    questions and learn more about EES via<br>
+    interactive tutorials. You will also find our 24/7<br>
+    support contact details should you need any<br>
+    further assistance from one of our customer<br>
+    support representatives.<br>
+</blockquote>
+
+<h3>My comment</h3>
+
+<p>
+    Admittedly I was unaware of the existence of so called 'proof theoretic barriers' at the moment of submission.
+    I might need to spend further time exploring those issues such that I can eventually
+    address those in future.
+
+    In case an educated reader is interested, he might also provide the 'missing links' in meantime.
+
+    Not having investigated those special 'proof theoretic barriers' yet, my current logical understanding is that
+    this proof already provides sufficient evidence that P &ne; NP.
+</p>
+
+<h1>Remarks</h1>
+
+<p>Note that the proof as provided on this page is the same as it was submitted to the three journals listed above,
+    apart from this version containing some improvements:
+<ul>
+    <li>minor spelling corrections</li>
+    <li>
+        formatting corrections: The rendered pdf file now includes some parts that were cut off in the original version
+        when some formulas were too long and therefore reached out over the boarders of the pdf. However, given those
+        formulas had very long names, it was obviously not too difficult to find out what the missing pieces were, at
+        least none of the readers complained so far.
+    </li>
+</ul>
+</p>
