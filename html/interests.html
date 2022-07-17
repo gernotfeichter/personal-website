@@ -34,20 +34,25 @@ interest to the public.
 <h4>Betz's law</h4>
 
 <p>
-    Graham Flowers posted a video on <a href="https://www.youtube.com/watch?v=QXxIceWU6IQ&list=WL&index=4&ab_channel=grahamflowers">youtube [3]</a> that claims that his wind turbine is more efficient
-    than what the conventional model of Betz allows (more than 59% efficiency).
+    Graham Flowers posted a video on
+    <a href="https://www.youtube.com/watch?v=QXxIceWU6IQ&list=WL&index=4&ab_channel=grahamflowers">youtube [3]</a> in
+    which he claims that his wind turbine is more efficient than what the conventional model of Betz allows
+    (more than 59% efficiency).
     <br><br>
-    I consider it worthwhile to evaluate the proposed solution!
+    I considered it worthwhile to evaluate the proposed solution!
     <br>
-    Right now I only checked the math and while I did not arrive at the exact same numbers as he, I
-    arrived at a similar result.
     <br><br>
-    Claim: Wind turbine with corrugated foils with a diameter of 2.9m produces 794 watts at a wind
-    speed of 6.7m/s.
+    Claim: Wind turbine with corrugated foils with a diameter of 2.9 m produces 794 watts at a wind
+    speed of 6.7 m/s.
     <br><br>
-    My calculation of Betz's limit for the given claim:
+</p>
+
+<h5>Calculation of Betz's limit with standard air with 0% humid air at 0 °C</h5>
+
+<p>
+    Using what wolfram alpha considers "air", I obtained the following results:
     <br><br>
-    How much volume of air passes through the turbine in one second? 44m^3.
+    How much volume of air passes through the turbine in one second? 44 m^3.
     <br>
     https://www.wolframalpha.com/input?i=volume+of+a+cylinder+with+2.9m+diameter+and+6.7m+hight
     <br><br>
@@ -55,7 +60,7 @@ interest to the public.
     <br>
     https://www.wolframalpha.com/input?i=44m%5E3+air
     <br><br>
-    What is the kinetic energy of 56.1kg moving at 6.7m/s? 0.3498 watt hours
+    What is the kinetic energy of 56.1 kg moving at 6.7 m/s? 0.3498 watt hours
     <br>
     https://www.wolframalpha.com/input?i=energy+in+56.1kg+moving+at+6.7m%2Fs
     <br><br>
@@ -63,11 +68,53 @@ interest to the public.
     <br>
     https://www.wolframalpha.com/input?i=0.3498+watt+hours+to+watt+seconds
     <br><br>
-    How much power should the turbine output maximally, after applying Betz's law? 746.25 watt
-    seconds
+    How much power should the turbine output maximally, after applying Betz's law? 746.25 watt seconds
     <br>
     https://www.wolframalpha.com/input?i=1259.3+*++%2816%2F27%29
     <br><br>
+    What could have gone wrong here? I think that the most likely reasons for my result being slightly off to Graham's
+    is that we performed the calculations with different air temperature or humidity levels.
+    For sake of simplicity I will therefore fix the temperature to a relatively cold value of 15 °C and repeat the rest
+    of the procedure at 0 % and 100% humidity levels.
+</p>
+
+<h5>Calculation of Betz's limit with 100% humid air at 15 °C</h5>
+<p>
+    What is the mass of 44 m^3 air at 100% humidity and 15 °C? (1202 g * 44 m^3) = 52888 g
+    <br>
+    https://www.wolframalpha.com/input?i=air+at+100%25+humidity&assumption=%7B%22F%22%2C+%22MoistAirMoistureContent%22%2C+%22Tdb%22%7D+-%3E%2215+%C2%B0C%22&assumption=%7B%22F%22%2C+%22MoistAirMoistureContent%22%2C+%22P%22%7D+-%3E%221+bar%22&assumption=%7B%22F%22%2C+%22MoistAirMoistureContent%22%2C+%22Vmair%22%7D+-%3E%2244+m%5E3%22
+    <br><br>
+    What is the kinetic energy of 52.888 kg moving at 6.7 m/s? 0.3297 watt hours
+    <br>
+    https://www.wolframalpha.com/input?i=kinetic+energy+of+52.888+kg+moving+at+6.7+m%2Fs
+    <br><br>
+    What is that kinetic energy (previous answer) in watt seconds? 1186.9 watt seconds
+    <br>
+    https://www.wolframalpha.com/input?i=0.3297+watt+hours+to+watt+seconds
+    <br>
+    <br><br>
+    How much power should the turbine output maximally, after applying Betz's law? 703.35 watt seconds
+    <br>
+    https://www.wolframalpha.com/input?i=1186.9+*++%2816%2F27%29
+</p>
+
+<h5>Calculation of Betz's limit with 100% humid air at 0 °C</h5>
+<p>
+    What is the mass of 44 m^3 air at 100% humidity and 15 °C? (1273 g * 44 m^3) = 56012 g
+    <br>
+    https://www.wolframalpha.com/input?i=air+at+100%25+humidity&assumption=%7B%22F%22%2C+%22MoistAirMoistureContent%22%2C+%22Tdb%22%7D+-%3E%220+%C2%B0C%22&assumption=%7B%22F%22%2C+%22MoistAirMoistureContent%22%2C+%22P%22%7D+-%3E%221+bar%22&assumption=%7B%22F%22%2C+%22MoistAirMoistureContent%22%2C+%22Vmair%22%7D+-%3E%2244+m%5E3%22
+    <br><br>
+    What is the kinetic energy of 56.012 kg moving at 6.7 m/s? 0.3492 watt hours
+    <br>
+    https://www.wolframalpha.com/input?i=kinetic+energy+of+56.012+kg+moving+at+6.7+m%2Fs
+    <br><br>
+    What is that kinetic energy (previous answer) in watt seconds? 1257.1 watt seconds
+    <br>
+    https://www.wolframalpha.com/input?i=0.3492+watt+hours+in+watt+seconds
+    <br><br>
+    How much power should the turbine output maximally, after applying Betz's law? 744.95 watt seconds
+    <br>
+    https://www.wolframalpha.com/input?i=1257.1+*++%2816%2F27%29
 </p>
 
 <h2>Storage</h2>
